@@ -9,7 +9,6 @@ public class DesktopComputer extends Product {
 
 	@Override
 	public double taxCalculator() {
-		System.out.println("Calculating DesktopComputer tax.");
 		return this.value * TAX_PER_CENT;
 	}
 
