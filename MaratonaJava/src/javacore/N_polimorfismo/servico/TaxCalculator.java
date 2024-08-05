@@ -4,19 +4,21 @@ import javacore.N_polimorfismo.dominio.DesktopComputer;
 import javacore.N_polimorfismo.dominio.Tomato;
 
 public class TaxCalculator {
-	public void taxDesktopComputerCalculator(DesktopComputer computer) {
-		System.out.println("DesktopComputer's tax report");
+	public static void taxDesktopComputerCalculator(DesktopComputer computer) {
+		System.out.println("DesktopComputer's tax report:\n");
 		double tax = computer.taxCalculator();
-		System.out.printf("Product's name: %s", computer.getName());
-		System.out.printf("DesktopComputer's value: %d", computer.getValue());
-		System.out.printf("DesktopComputer's tax: %d%n", tax);
+		System.out.printf("Product's name: %s%n", computer.getName());
+		System.out.printf("DesktopComputer's value: R$ %.1f%n", computer.getValue());
+		System.out.printf("DesktopComputer's tax: R$ %.1f%n", tax);
 	}
-	public void taxDesktopComputerCalculator(Tomato tomato) {
-		System.out.println("DesktopComputer's tax report");
+		
+	
+	public static void taxDesktopComputerCalculator(Tomato tomato) {
+		System.out.println("\nTomato's tax report:\n");
 		double tax = tomato.taxCalculator();
-		System.out.printf("Product's name: %s", tomato.getName());
-		System.out.printf("Tomato value: %d", tomato.getValue());
-		System.out.printf("Toamto tax: %d", tax);
+		System.out.printf("Product's name: %s%n", tomato.getName());
+		System.out.printf("Tomato value: R$ %.1f%n", tomato.getValue());
+		System.out.printf("Toamto tax: R$ %.1f%n", tax);
 	}
 
 }
