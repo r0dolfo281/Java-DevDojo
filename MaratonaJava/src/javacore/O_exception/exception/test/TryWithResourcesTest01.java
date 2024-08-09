@@ -6,24 +6,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 
+import javacore.O_exception.exception.dominio.Leitor1;
+import javacore.O_exception.exception.dominio.Leitor2;
+
 public class TryWithResourcesTest01 {
 	public static void main(String [] args) {
-		
+		readFile();
 	}
 	public static void readFile() {
-		try(Reader reader = new BufferedReader(new FileReader("teste.txt"))){
+		try(Leitor1 leitor1 = new Leitor1(); Leitor2 leitor2 = new Leitor2()){
 			
 		}catch(IOException e) {
 			
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	public static void readFile2() {
 		Reader reader = null;

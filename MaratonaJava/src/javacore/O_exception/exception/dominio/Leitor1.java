@@ -7,7 +7,7 @@ public class Leitor1 implements Closeable {
 
 	@Override
 	public void close() throws IOException {
-		
+		System.out.println("Closing Leitor 1");
 	}
 
 	
